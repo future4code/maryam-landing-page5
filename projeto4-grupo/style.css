@@ -167,8 +167,8 @@ a:hover {
 Página da Galeria */
 
 .container-galeria {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   height: 2100px;
 }
 
@@ -182,8 +182,8 @@ Página da Galeria */
 
 .box-servicos {
   height: 650px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 
@@ -201,8 +201,13 @@ Página da Galeria */
 }
 
 .coluna-paragrafo {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat (2 , 1fr);
+  gap: 10px;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .descricao-servicos {
@@ -214,6 +219,11 @@ Página da Galeria */
 }
 
 /* Parte 2 */
+
+.container-anuncio{
+  display: grid;
+
+}
 
 .titulo-anuncio {
   color: rgb(39, 72, 84);
