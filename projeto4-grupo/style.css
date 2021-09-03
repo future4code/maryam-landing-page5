@@ -167,3 +167,16 @@ a:hover{
     width: 280px;
     cursor: pointer;
 }
+
+footer{
+    display: flex;
+    background-color:#142434;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 800px 0px 500px;
+}
+
+footer img{
+    width: 80px;
+}
