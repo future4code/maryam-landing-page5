@@ -7,7 +7,7 @@
 
 header{
     display: flex;
-    background-color: #142434;
+    background-color: rgb(19,34,53);
     justify-content: space-between;
     align-items: center;
     padding-left: 80px;
@@ -166,4 +166,75 @@ a:hover{
     height: 30px;
     width: 280px;
     cursor: pointer;
+}
+
+/* Página Quem Somos */
+
+.container-quem-somos{
+    display: flex;
+    flex-direction: column;
+}
+
+#frase-principal{
+    color: rgb(39, 72, 84);
+    font-size: 45px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.paragrafo-1{
+    font-size: 30px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+}
+
+.paragrafo-2{
+    color:rgb(39, 72, 84);
+    font-size: 27px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 25px;
+}
+
+.container-box-time{
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-box-time img{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.nomes-funcionarios {
+    text-align: center;
+    justify-content: center;
+}
+
+.cargo-funcionarios{
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(19,34,53);
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 200px 0px 500px;
+}
+
+footer img{
+    width: 80px;
 }
