@@ -12,6 +12,7 @@ header{
     align-items: center;
     padding-left: 80px;
     padding-right: 80px;
+    height: 150px;
 }
 
 header img{
@@ -29,3 +30,108 @@ a:hover{
     color: rgba(255, 255, 255, 0.932);
 }  
 
+.container-banner{
+    height: 500px;
+    background-color: red;
+    background-image: url('./img/bg1.jpg');
+    background-position: center;
+    
+}
+.form{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    float: right;
+    margin-right: 50px;
+    border: 4px solid #ccc;
+}
+.form h2{
+    padding: 10px;
+    text-align: center;
+    color: #999999;
+}
+.input-container{
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.input-container span{
+    display: block;
+    font-size: 17px;
+    width: 100%;
+    color: #BBBBBB;
+}
+.input-container input[type =text]{
+    width: 340px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+.input-container input[type=submit]{
+    color: white;
+    font-size: 25px;
+    width: 250px;
+    height: 50px;
+    background-color:#363a6D;
+    margin-left: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.sobre{
+    display: flex;
+    float: left;
+    width: 600px;
+    padding: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 280px;
+    background-color: rgba(33, 35,67, 0.7);
+}
+.sobre ul{
+    list-style-position: inside;
+
+}
+.sobre ul li{
+    color: white;
+    list-style: none;
+}
+.sobre ul p{
+    color:yellow;
+}
+.segunda-sessao{
+    background-color: #DDDDDD;
+    text-align: center;
+    padding-top: 20px;
+    height: 450px;
+}
+.segunda-sessao h2{
+   margin: 10px;
+}
+.segunda-sessao p{
+    margin: 20px;
+   text-align: center;
+}
+.sobre-imagens{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sobre-imagens img{
+    width: 400px;
+    height: 180px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer{
+    display: flex;
+    background-color:#142434;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 800px 0px 500px;
+}
+
+footer img{
+    width: 80px;
+}
