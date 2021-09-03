@@ -1,3 +1,4 @@
+/* Comandos Chave */
 *{
     padding: 0; 
     margin: 0;
@@ -34,6 +35,21 @@ a{
 a:hover{
     color: rgba(255, 255, 255, 0.932);
 }  
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #142434;
+  color: white;
+  height: 120px; 
+  width: 100%;
+  bottom: 0;
+}
+footer img{
+  width: 80px;
+}
+
+/* Página HOME */
 .container-banner{
     height: 500px;
     background-color: red;
@@ -123,6 +139,7 @@ a:hover{
     padding: 20px;
     margin-top: 50px;
 }
+
 /* Página de contato */
 .pagina-contato{
     display: flex;
@@ -165,103 +182,97 @@ a:hover{
     width: 280px;
     cursor: pointer;
 }
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: #142434;
-    color: white;
-    height: 120px; 
-    width: 100%;
-    bottom: 0;
-}
-footer img{
-    width: 80px;
-}
 
+/* Pagina da Galeria */
 .container-galeria {
-    display: flex;
-    flex-direction: column;
-    height: 2100px;
-  }
-  .titulo-galeria {
-    color: rgb(39, 72, 84);
-    font-size: 40px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: auto;
+}
+.titulo-galeria {
+  color: rgb(39, 72, 84);
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+.box-servicos {
+  height: 650px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.box-servicos img {
+  width: 650px;
+  height: 450px;
+  padding: 40px;
+  margin-top: 10px;
+  border-radius: 15%;
+}
+.titulo-box {
+  text-align: center;
+  justify-content: center;
+}
+.coluna-paragrafo {
+  display: grid;
+  grid-template-columns: repeat (2 , 1fr);
+  gap: 10px;
+  margin: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  text-align: center;
+}
+.descricao-servicos {
+  text-align: center;
+  justify-content: center;
+  text-size-adjust: 20px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.container-anuncio{
+  display: grid;
+}
+.titulo-anuncio {
+  color: rgb(39, 72, 84);
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+}
+.paragrafo-vantagens {
+  font-size: 23px;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 25px;
+}
+.organizado-colunas{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
     text-align: center;
-    padding-top: 50px;
-  }
-  .box-servicos {
-    height: 650px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .box-servicos img {
-    width: 650px;
-    height: 450px;
-    padding: 40px;
-    margin-top: 10px;
-    border-radius: 20%;
-  }
-  .titulo-box {
-    text-align: center;
-    justify-content: center;
-  }
-  .coluna-paragrafo {
-    display: flex;
-    flex-direction: column;
-  }
-  .descricao-servicos {
-    text-align: center;
-    justify-content: center;
-    text-size-adjust: 20px;
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-  /* Parte 2 */
-  .titulo-anuncio {
-    color: rgb(39, 72, 84);
-    font-size: 40px;
-    justify-content: center;
-    text-align: center;
-    padding-top: 40px;
-  }
-  .paragrafo-vantagens {
-    font-size: 23px;
-    text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 25px;
-  }
-  /* 
-  Parte fotos */
-  .organizado-colunas{
-      display: grid;
-      grid-template-columns: repeat(2 , 1fr);
-      gap: 10px;
-      margin: 20px;
-      padding-left: 50px;
-      padding-right: 30px;
-      text-align: center;
-  }
-  .fotos-quartos { 
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
-    align-items: center;
-  }
-  .quartos-ajustes{
-      width: 550px;
-      height: 350px;
-      border-radius: 8%;
-  }
-  .nomes-quartos{
-      padding-top: 20px;
-  }
-  .descricao-quartos{
-      font-size: 25px;
-  }
+}
+.fotos-quartos { 
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  align-items: center;
+}
+.quartos-ajustes{
+    width: 550px;
+    height: 350px;
+    border-radius: 8%;
+}
+.nomes-quartos{
+    padding-top: 20px;
+}
+.descricao-quartos{
+    font-size: 25px;
+}
 
+/* Pagina Sobre Nós */
   .container-quem-somos {
     display: flex;
     flex-direction: column;
@@ -311,3 +322,52 @@ footer img{
     font-size: 20px;
     padding-top: 10px;
   }
+
+  /* Responsividade */
+  @media screen and (min-height: 400px) and (max-height: 900px){
+      .organizado-colunas{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 30px 0px 30px 0px;     
+  }
+
+  .container-banner{
+    width: 100%;
+    height: 100%;
+  }
+
+  .form{
+    width: 400px;
+    height: 80%;
+    float: left;
+    margin-left: 150px;
+  }
+  section .container-anuncio{
+    text-align: center;
+    position: absolute;
+    margin: 48px;
+  }
+
+  section.coluna-paragrafo{
+    display: block;
+  }
+  .box-servicos{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container-anuncio{
+    padding-top: 600px;
+  }
+
+  footer img{
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .links{
+    float: left;
+    white-space: nowrap;
+  }
+}
