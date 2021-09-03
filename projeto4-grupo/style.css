@@ -5,37 +5,42 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    display: grid;
+    background-color: #DDDDDD;  
+    
+}
 header{
     display: flex;
-    background-color: rgb(19,34,53);
+    background-color: #142434;
     justify-content: space-between;
+    padding: 0px 70px 0 70px;
     align-items: center;
-    padding-left: 80px;
-    padding-right: 80px;
     height: 150px;
 }
-
 header img{
     width: 150px;
     color: white;
 }
 
+header img:hover{
+    border:1px solid white;
+}
 a{
     color: white;
     text-decoration: none;
     padding-left: 50px;
 }
-
 a:hover{
     color: rgba(255, 255, 255, 0.932);
 }  
-
 .container-banner{
     height: 500px;
     background-color: red;
     background-image: url('./img/bg1.jpg');
     background-position: center;
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .form{
     width: 400px;
@@ -53,7 +58,6 @@ a:hover{
 .input-container{
     margin-top: 20px;
     margin-left: 10px;
-
 }
 .input-container span{
     display: block;
@@ -80,7 +84,7 @@ a:hover{
     display: flex;
     float: left;
     width: 600px;
-    padding: 60px;
+    padding: 40px;
     margin-top: 50px;
     margin-left: 50px;
     height: 280px;
@@ -88,7 +92,6 @@ a:hover{
 }
 .sobre ul{
     list-style-position: inside;
-
 }
 .sobre ul li{
     color: white;
@@ -101,7 +104,6 @@ a:hover{
     background-color: #DDDDDD;
     text-align: center;
     padding-top: 20px;
-    height: 665px;
 }
 .segunda-sessao h2{
    margin: 10px;
@@ -110,8 +112,7 @@ a:hover{
     margin: 20px;
    text-align: center;
 }
-.sobre-imagens{
-    height: 400px;
+.sobre-imagens{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -123,22 +124,20 @@ a:hover{
     margin-top: 50px;
 }
 /* Página de contato */
-
 .pagina-contato{
     display: flex;
     justify-content: center;
     padding: 20px;
     border: 4px solid #ccc;
+    height: 700px;
 }
 .pagina-contato h2{
-
     text-align: center;
 }
 .input-container-contato{
     font-size: 20px;
     margin-top: 20px;
 }
-
 .input-container-contato input[type =text]{
     width: 600px;
     height: 55px;
@@ -153,7 +152,6 @@ a:hover{
     padding: 20px;
     width: 100%;
     height: 100px;
-    
 }
 .enviar{
     display: flex;
@@ -167,74 +165,149 @@ a:hover{
     width: 280px;
     cursor: pointer;
 }
-
-/* Página Quem Somos */
-
-.container-quem-somos{
+footer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: #142434;
+    color: white;
+    height: 120px; 
+    width: 100%;
+    bottom: 0;
+}
+footer img{
+    width: 80px;
 }
 
-#frase-principal{
+.container-galeria {
+    display: flex;
+    flex-direction: column;
+    height: 2100px;
+  }
+  .titulo-galeria {
+    color: rgb(39, 72, 84);
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .box-servicos {
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box-servicos img {
+    width: 650px;
+    height: 450px;
+    padding: 40px;
+    margin-top: 10px;
+    border-radius: 20%;
+  }
+  .titulo-box {
+    text-align: center;
+    justify-content: center;
+  }
+  .coluna-paragrafo {
+    display: flex;
+    flex-direction: column;
+  }
+  .descricao-servicos {
+    text-align: center;
+    justify-content: center;
+    text-size-adjust: 20px;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  /* Parte 2 */
+  .titulo-anuncio {
+    color: rgb(39, 72, 84);
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .paragrafo-vantagens {
+    font-size: 23px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 25px;
+  }
+  /* 
+  Parte fotos */
+  .organizado-colunas{
+      display: grid;
+      grid-template-columns: repeat(2 , 1fr);
+      gap: 10px;
+      margin: 20px;
+      padding-left: 50px;
+      padding-right: 30px;
+      text-align: center;
+  }
+  .fotos-quartos { 
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    align-items: center;
+  }
+  .quartos-ajustes{
+      width: 550px;
+      height: 350px;
+      border-radius: 8%;
+  }
+  .nomes-quartos{
+      padding-top: 20px;
+  }
+  .descricao-quartos{
+      font-size: 25px;
+  }
+
+  .container-quem-somos {
+    display: flex;
+    flex-direction: column;
+  }
+  #frase-principal {
     color: rgb(39, 72, 84);
     font-size: 45px;
     justify-content: center;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.paragrafo-1{
+  }
+  .paragrafo-1 {
     font-size: 30px;
     text-align: center;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 50px;
-}
-
-.paragrafo-2{
-    color:rgb(39, 72, 84);
+  }
+  .paragrafo-2 {
+    color: rgb(39, 72, 84);
     font-size: 27px;
     text-align: center;
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 25px;
-}
-
-.container-box-time{
-    height: 550px;
+  }
+  .container-box-time {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.container-box-time img{
-    width: 400px;
-    height: 400px;
+    padding-bottom: 200px;
+  }
+  .container-box-time img {
+    width: 350px;
+    height: 350px;
     padding: 20px;
     margin-top: 50px;
-}
-
-.nomes-funcionarios {
+  }
+  .nomes-funcionarios {
     text-align: center;
     justify-content: center;
-}
-
-.cargo-funcionarios{
+  }
+  .cargo-funcionarios {
     text-align: center;
     justify-content: center;
     font-size: 20px;
     padding-top: 10px;
-}
-
-footer{
-    display: flex;
-    background-color: rgb(19,34,53);
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    padding: 0px 200px 0px 500px;
-}
-
-footer img{
-    width: 80px;
-}
+  }
