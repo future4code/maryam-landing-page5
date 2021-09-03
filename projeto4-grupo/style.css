@@ -122,3 +122,48 @@ a:hover{
     padding: 20px;
     margin-top: 50px;
 }
+/* Página de contato */
+
+.pagina-contato{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 4px solid #ccc;
+}
+.pagina-contato h2{
+
+    text-align: center;
+}
+.input-container-contato{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.input-container-contato input[type =text]{
+    width: 600px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+.contato-mensagem{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contato-mensagem textarea{
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.enviar input[type=submit]{
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 280px;
+    cursor: pointer;
+}
